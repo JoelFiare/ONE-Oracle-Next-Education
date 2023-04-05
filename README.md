@@ -1,2 +1,2 @@
-# ONE-Oracle-Next-Education
-ONE Oracle Next Education
+# ONE Oracle Next Education - Alura
+ONE Oracle Next Education - Alura
