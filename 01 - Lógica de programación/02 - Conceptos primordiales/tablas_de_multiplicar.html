@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<h1>Tablas de multiplicar</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje) {
+        document.write(mensaje);
+        saltarLinea();
+    }
+
+    imprimir("Bucle While:");
+    var multiplicador = 1;
+    while (multiplicador <= 10) {
+        imprimir("4*" + multiplicador + " = " + (4 * multiplicador));
+        multiplicador++;
+    }
+
+    imprimir("<br>");
+
+    imprimir("Bucle For:");
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        imprimir("4*" + multiplicador + " = " + (4 * multiplicador));
+    }
+
+</script>
