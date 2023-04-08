@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>Adivina el numero</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje) {
+        document.write(mensaje);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos) {
+        var numeroLanzado = parseInt(prompt("Ingrese un numero del 0 al 10"));
+
+        if (numeroLanzado == numeroPensado) {
+            alert("CORRECTO, el número era el " + numeroPensado + " acertó en el intento " + contador + "/" + intentos);
+            break;
+        } else {
+            alert("INCORRECTO");
+        }
+
+        contador++;
+    }
+
+    if (numeroLanzado == numeroPensado) {
+        imprimir("Gracias por participar, el número era el " + numeroPensado + " acertó en el intento " + contador + "/" + intentos);
+    } else {
+        imprimir("Igualmente gracias por participar, el número correcto era el " + numeroPensado);
+    }
+
+</script>

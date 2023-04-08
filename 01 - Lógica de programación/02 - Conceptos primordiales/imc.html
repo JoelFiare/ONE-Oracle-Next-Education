@@ -4,22 +4,16 @@
 <script>
 
     function saltarLinea() {
-
         document.write("<br><br>");
-
     }
 
     function imprimir(mensaje) {
-
         document.write(mensaje);
         saltarLinea();
-
     }
 
     function calcularImc(peso, altura) {
-
         return (peso / (altura * altura));
-
     }
 
     var nombre = prompt("Ingrese su nombre")
@@ -31,21 +25,13 @@
     imprimir(nombre + ", su IMC calculado es de: " + imcCalculado);
 
     if (imcCalculado < 18.5) {
-
         imprimir("IMC Insuficiente");
-
     } else if (imcCalculado > 18.5 && imcCalculado < 25) {
-
         imprimir("IMC Normal");
-
     } else if (imcCalculado >= 25 && imcCalculado < 30) {
-
         imprimir("IMC sobrepeso");
-
     } else if (imcCalculado >= 30) {
-
         imprimir("IMC Obesidad");
-        
     }
 
 </script>

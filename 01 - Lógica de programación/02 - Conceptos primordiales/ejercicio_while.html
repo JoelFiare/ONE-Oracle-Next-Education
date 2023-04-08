@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>Ejercicio While</h1>
+
+<script>
+
+//¿Listo para un ejercicio que te hará romper un poco la cabeza? Usando la instrucción while, imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN".
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje) {
+        document.write(mensaje);
+        saltarLinea();
+    }
+
+    var contador = 2;
+
+    while (contador <= 100) {
+        imprimir(contador); 
+        contador = contador + 2;        
+    }
+
+    imprimir("FIN"); 
+
+</script>

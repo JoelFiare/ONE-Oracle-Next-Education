@@ -4,29 +4,21 @@
 <script>
 
     function saltarLinea() {
-
         document.write("<br><br>");
-
     }
 
     function imprimir(mensaje) {
-
         document.write(mensaje);
         saltarLinea();
-
     }
 
     var numeroPensado = Math.round(Math.random() * 10);
     var numeroLanzado = parseInt(prompt("Ingrese un numero del 0 al 10"));
 
     if (numeroLanzado == numeroPensado) {
-
         imprimir("Usted Acertó con el número " + numeroPensado);
-
     } else {
-
         imprimir("Número Incorrecto, el correcto era " + numeroPensado);
-
     }
 
 </script>
