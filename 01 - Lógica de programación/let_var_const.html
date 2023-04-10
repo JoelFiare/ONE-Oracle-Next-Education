@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+<h1>Let - Var - Const</h1>
+
+<script>
+var miNombre = "Joel"; // se agrega a windows, variables globales
+console.log(miNombre);
+console.log(window);
+
+function mostrarMiNombre(){
+    console.log(miNombre);
+}
+
+function mostrarMiApellido(params) {
+    var miApellido = "Fiaré"
+    console.log(miApellido);
+}
+mostrarMiNombre();
+mostrarMiApellido();
+
+if (true) {
+    let animal = "Gato" //tiene un alcance de bloque, solo están disponibles dentro del bloque de código en el que se declaran.
+}
+
+// console.log(animal);
+
+/* 
+En JavaScript, let y var son dos formas de declarar variables, pero tienen algunas diferencias importantes.
+
+La principal diferencia es que let tiene un alcance de bloque, mientras que var tiene un alcance de función. Esto significa que las variables declaradas con let solo están disponibles dentro del bloque de código en el que se declaran, mientras que las variables declaradas con var están disponibles en toda la función en la que se declaran.
+
+Por ejemplo:
+
+javascript
+Copy code
+function ejemplo() {
+    var x = 1;
+    if (true) {
+        var x = 2; // Esta variable 'x' sobreescribe la variable 'x' declarada arriba
+        console.log(x); // Output: 2
+  }
+  console.log(x); // Output: 2
+}
+
+ejemplo();
+En este ejemplo, la variable x se declara dos veces con var. La segunda declaración sobrescribe la primera, y x tiene un valor de 2 dentro y fuera del bloque if.
+
+En cambio, si usamos let en lugar de var, la variable x tendría un alcance de bloque y no sobrescribiría la variable x declarada en el nivel superior:
+
+javascript
+Copy code
+function ejemplo() {
+  let x = 1;
+  if (true) {
+    let x = 2;
+    console.log(x); // Output: 2
+  }
+  console.log(x); // Output: 1
+}
+
+ejemplo();
+En este ejemplo, la variable x se declara con let tanto dentro como fuera del bloque if. La variable x dentro del bloque if tiene un valor de 2, pero la variable x fuera del bloque if tiene su valor original de 1.
+
+En resumen, let tiene un alcance de bloque, mientras que var tiene un alcance de función. En la mayoría de los casos, se recomienda usar let en lugar de var porque hace que el código sea más fácil de leer y menos propenso a errores.
+*/
+</script>
