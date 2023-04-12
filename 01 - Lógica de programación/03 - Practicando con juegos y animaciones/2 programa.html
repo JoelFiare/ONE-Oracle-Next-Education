@@ -1,18 +1,16 @@
-<canvas width="600" height="400" >
-    
-</canvas>
+<canvas width="600" height="400"></canvas>
 
 <script>
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");
-
-    //Verde
-    pincel.fillStyle = "green"; //propiedad o característica 
-    pincel.fillRect(0,0,200,400); // función
-
+    
     //Gris
     pincel.fillStyle = "lightgrey"; //propiedad o característica 
     pincel.fillRect(0,0,600,400); // inicio X,Y, fin X,Y
+    
+    //Verde
+    pincel.fillStyle = "green"; //propiedad o característica 
+    pincel.fillRect(0,0,200,400); // función
 
     //Rojo
     pincel.fillStyle = "red"; //propiedad o característica 
@@ -32,5 +30,5 @@
     pincel.arc(300,200,50,0,2*3.14); //pos X,Y,Circunferencia,AnguloInicial,AnguloFinal
     pincel.fill();
 
-    //https://developer.mozilla.org/es/docs/Web/API/Canvas_API
 </script>
+    <!-- https://developer.mozilla.org/es/docs/Web/API/Canvas_API -->
