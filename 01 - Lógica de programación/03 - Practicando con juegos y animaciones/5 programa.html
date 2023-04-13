@@ -1,10 +1,32 @@
 <canvas width="600" height="400"></canvas>
 
 <script>
-    var pantalla = document.querySelector("canvas");
-    var pincel = pantalla.getContext("2d");
     
-    //Gris
-    pincel.fillStyle = "lightgrey"; 
-    pincel.fillRect(0,0,600,400); 
+    function dibujarCuadrado(x,y,ancho,alto,color){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,ancho,alto);
+
+        pincel.strokeStyle = "black"; //Color del Borde
+        pincel.strokeRect(x,y,ancho,alto); //Borde
+    }
+
+    //Estructura Repetitiva While
+    // var i = 0;
+    // while (i < 600) {
+    //     dibujarCuadrado(i,0,50,50,"red");
+    //     dibujarCuadrado(i,50,50,50,"yellow");
+    //     dibujarCuadrado(i,100,50,50,"green");
+    //     i = i + 50;
+    // }
+
+    //Estructura Repetitiva for
+    for (let i = 0; i < 600; i = i +50) {
+        dibujarCuadrado(i,0,50,50,"red");
+        dibujarCuadrado(i,50,50,50,"yellow");
+        dibujarCuadrado(i,100,50,50,"green");
+    }
+
 </script>
