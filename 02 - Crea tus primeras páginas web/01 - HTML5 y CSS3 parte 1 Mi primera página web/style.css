@@ -1,5 +1,7 @@
 body {
     background-color: #ccc;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -10,10 +12,14 @@ p {
     text-align: center;
 }
 
-.fs {
+#fs {
     font-size: 20px;
 }
 
 em strong{
     color: red;
+}
+
+#banner {
+    width: 100%;
 }
