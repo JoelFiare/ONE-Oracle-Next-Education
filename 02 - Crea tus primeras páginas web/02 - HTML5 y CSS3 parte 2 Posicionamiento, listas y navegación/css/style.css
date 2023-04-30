@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+}
+.titulo-principal {
+  padding-left: 30px;
+}
+.principal {
+  background-color: #ccc;
+  padding: 20px;
+}
+.titulo-centrado {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+#fs {
+  font-size: 20px;
+}
+em strong {
+  color: red;
+}
+#banner {
+  width: 100%;
+}
+.diferenciales {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+}
+h2 {
+  text-align: center;
+}
+.items {
+  font-style: italic;
+}
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+.imagenDiferenciales {
+  width: 50vw;
+}
